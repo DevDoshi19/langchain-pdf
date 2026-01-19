@@ -44,5 +44,6 @@ def export_pdf(
 
     template = ProfessionalTemplate()
     template.render(pdf, text)
-
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     pdf.output(str(output_path))
