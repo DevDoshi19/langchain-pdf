@@ -83,7 +83,7 @@ def main() -> None:
 
     # -------- Mode 2: Topic → AI → PDF --------
     if args.topic and args.out:
-        from examples.llm_factory import get_llm  # lazy import
+        from langchain_pdf.llm_factory import get_llm # lazy import
         from langchain_core.prompts import PromptTemplate
 
         PROMPT = """
