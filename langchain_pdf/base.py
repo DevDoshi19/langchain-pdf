@@ -1,10 +1,11 @@
 from fpdf import FPDF
-from pathlib import Path
+from importlib.resources import files
 
 
 class BasePDF(FPDF):
     """
     Base PDF with soft, readable typography using Inter.
+    Fonts are loaded as package assets (PyPI-safe).
     """
 
     FONT_FAMILY = "Inter"
@@ -14,19 +15,25 @@ class BasePDF(FPDF):
         self._register_fonts()
 
     def _register_fonts(self):
-        fonts_dir = Path(__file__).parent / "fonts"
+        """
+        Register Inter fonts bundled inside the package.
+        """
+        font_dir = files("langchain_pdf").joinpath("assets/fonts")
+
+        regular_font = font_dir / "Inter_18pt-Regular.ttf"
+        bold_font = font_dir / "Inter_18pt-Bold.ttf"
 
         self.add_font(
             self.FONT_FAMILY,
             "",
-            str(fonts_dir / "Inter_18pt-Regular.ttf"),
+            str(regular_font),
             uni=True
         )
 
         self.add_font(
             self.FONT_FAMILY,
             "B",
-            str(fonts_dir / "Inter_18pt-Bold.ttf"),
+            str(bold_font),
             uni=True
         )
 
