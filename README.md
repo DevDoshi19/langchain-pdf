@@ -260,5 +260,15 @@ MIT License — free to use, modify, and distribute.
 If you are tired of broken PDFs from AI output,
 **langchain-pdf is built for you.**
 
-```
+## 🔤 Fonts & Attribution
+
+This project bundles the **Inter** font for consistent, readable PDF output.
+
+Inter is licensed under the **SIL Open Font License (OFL 1.1)**  
+Font copyright © The Inter Project Authors.
+
+The font license is included in:
+`langchain_pdf/assets/fonts/LICENSE.txt`
+
+
 
