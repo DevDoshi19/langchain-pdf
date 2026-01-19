@@ -48,7 +48,7 @@ LLM Output → Normalize → Parse → Render → PDF
 Want to see what the generated PDFs look like?
 
 👉 Check out the sample outputs here:  
-[`docs/outputs/`](docs/outputs/)
+[`docs/outputs/`](https://github.com/DevDoshi19/langchain-pdf/tree/main/doc/output)
 
 ## 📦 Installation
 
@@ -261,3 +261,4 @@ If you are tired of broken PDFs from AI output,
 **langchain-pdf is built for you.**
 
 ```
+
