@@ -1,0 +1,22 @@
+[project.scripts]
+langchain-pdf = "langchain_pdf.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-pdf"
+version = "0.1.0"
+description = "Generate clean, readable PDFs from text or LLM output"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fpdf2",
+    "python-dotenv",
+    "langchain",
+    "langchain-google-genai",
+]
+
+[tool.setuptools]
+packages = ["langchain_pdf"]
