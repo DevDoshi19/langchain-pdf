@@ -41,7 +41,7 @@ def generate_course_text(topic: str) -> str:
 
 
 if __name__ == "__main__":
-    topic = "Generative AI with LangGraph"
+    topic = "Machine Learning Algorithms"
 
     print("🔹 Generating content using LangChain...")
     raw_text = generate_course_text(topic)
@@ -49,8 +49,8 @@ if __name__ == "__main__":
     print("🔹 Creating PDF...")
     export_pdf(
         text=raw_text,
-        output_path="reports/langgraph_output.pdf",
-        title="LangGraph Course Overview"
+        output_path="reports/machine_learning_algorithms_output.pdf",
+        title="Machine Learning Algorithms Course Overview"
     )
 
-    print("✅ PDF generated: reports/langgraph_output.pdf")
+    print("✅ PDF generated: reports/machine_learning_algorithms_output.pdf")

@@ -1,7 +1,6 @@
 from fpdf import FPDF
 from importlib.resources import files
 
-
 class BasePDF(FPDF):
     """
     Base PDF with soft, readable typography using Inter.
