@@ -93,6 +93,22 @@ Create a `.env` file in the project root:
 ```env
 GOOGLE_API_KEY=your_gemini_api_key_here
 ```
+### Optional LLM Providers
+
+OpenAI:
+```bash
+pip install langchain-openai
+```
+
+Google Gemini:
+```bash
+pip install langchain-google-genai
+```
+
+Anthropic:
+```bash
+pip install langchain-anthropic
+```
 
 > `.env` is ignored by Git and should never be committed.
 

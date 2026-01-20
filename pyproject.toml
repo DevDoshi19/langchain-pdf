@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "langchain-pdf"
-version = "0.1.0"
+version = "0.1.1"
 description = "Generate clean, readable PDFs from raw text or LLM output"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -36,7 +36,6 @@ classifiers = [
 dependencies = [
   "fpdf2",
   "langchain",
-  "langchain-google-genai",
   "python-dotenv"
 ]
 
