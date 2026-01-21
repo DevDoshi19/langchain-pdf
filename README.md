@@ -10,6 +10,12 @@ Generate clean, readable, professional PDFs from raw text or Large Language Mode
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
 
+## 📦 Installation
+
+```bash
+pip install langchain-pdf
+```
+
 ## ✨ Why langchain-pdf?
 
 Large Language Models often generate:
