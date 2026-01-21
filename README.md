@@ -37,7 +37,7 @@ LLM Output → Normalize → Parse → Render → PDF
 - 📚 Structured document parsing (headings, paragraphs, bullets)
 - 🖨️ Professional PDF rendering
 - 🛑 No blank pages or orphan content
-- 🔗 LangChain integration (Gemini supported)
+- 🔗 LangChain integration (Gemini ,OpenAI , Anthropic supported)
 - 💻 CLI support (no Python code required)
 - 🧪 Windows-tested (PowerShell friendly)
 - 📦 Open-source & extensible
@@ -86,12 +86,20 @@ pip install -e .
 
 ---
 
+Set ONE of the following environment variables:
+
+- `OPENAI_API_KEY` (OpenAI)
+- `GOOGLE_API_KEY` or `GEMINI_API_KEY` (Google Gemini)
+- `ANTHROPIC_API_KEY` (Anthropic)
+
 ## 🔐 Environment Setup (for AI generation)
 
 Create a `.env` file in the project root:
 
 ```env
 GOOGLE_API_KEY=your_gemini_api_key_here
+OPENAI_API_KEY=your_gemini_api_key_here
+ANTHROPIC_API_KEY=your_gemini_api_key_here
 ```
 ### Optional LLM Providers
 
