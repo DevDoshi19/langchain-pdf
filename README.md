@@ -5,10 +5,12 @@ Generate clean, readable, professional PDFs from raw text or Large Language Mode
 `langchain-pdf` is designed for developers who want **deterministic, well-formatted documents** instead of messy markdown or broken PDFs.
 
 ---
+![PyPI](https://img.shields.io/pypi/v/langchain-pdf?style=flat-square)
 ![GitHub stars](https://img.shields.io/github/stars/DevDoshi19/langchain-pdf?style=flat-square)
 ![License](https://img.shields.io/github/license/DevDoshi19/langchain-pdf?style=flat-square)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue?style=flat-square)
 ![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
+![Python](https://img.shields.io/pypi/pyversions/langchain-pdf?style=flat-square)
+![Downloads](https://img.shields.io/pypi/dm/langchain-pdf?style=flat-square)
 
 ## 📦 Installation
 
@@ -43,7 +45,7 @@ LLM Output → Normalize → Parse → Render → PDF
 - 📚 Structured document parsing (headings, paragraphs, bullets)
 - 🖨️ Professional PDF rendering
 - 🛑 No blank pages or orphan content
-- 🔗 LangChain integration (Gemini ,OpenAI , Anthropic supported)
+- 🔗 LangChain integration (Gemini tested, OpenAI & Anthropic compatible)
 - 💻 CLI support (no Python code required)
 - 🧪 Windows-tested (PowerShell friendly)
 - 📦 Open-source & extensible
@@ -54,7 +56,7 @@ LLM Output → Normalize → Parse → Render → PDF
 Want to see what the generated PDFs look like?
 
 👉 Check out the sample outputs here:  
-[`docs/outputs/`](https://github.com/DevDoshi19/langchain-pdf/tree/main/doc/output)
+[`docs/outputs/`](https://github.com/DevDoshi19/langchain-pdf/tree/main/docs/outputs)
 
 ## 📦 Installation
 
@@ -128,44 +130,39 @@ pip install langchain-anthropic
 
 ---
 
-## 🖥️ CLI Usage
+## 🖥️ CLI Usage (Recommended)
 
 ### 1️⃣ Convert a text file to PDF
 
 ```bash
-python -m langchain_pdf.cli input.txt output.pdf
+langchain-pdf input.txt output.pdf
 ```
 
 Optional title:
 
 ```bash
-python -m langchain_pdf.cli input.txt output.pdf --title "My Document"
+langchain-pdf input.txt output.pdf --title "My Document"
 ```
 
----
-
-### 2️⃣ Generate a PDF using LangChain (Gemini)
+### 2️⃣ Generate a PDF using LangChain (LLM-powered)
 
 ```bash
-python -m langchain_pdf.cli \
-  --topic "Generative AI with LangChain" \
-  --out reports/course.pdf
+langchain-pdf --topic "Generative AI with LangChain" --out output.pdf
 ```
 
 This will:
 
-* generate content using Gemini
-* normalize messy output
-* create a clean PDF automatically
+* generate content via LangChain
+* normalize messy LLM output
+* produce a clean, readable PDF
 
 ---
 
 ### 3️⃣ Help
 
 ```bash
-python -m langchain_pdf.cli --help
+langchain-pdf --help
 ```
-
 ---
 
 ## 🧠 How It Works (Architecture)
@@ -299,6 +296,7 @@ Font copyright © The Inter Project Authors.
 
 The font license is included in:
 `langchain_pdf/assets/fonts/LICENSE.txt`
+
 
 
 
