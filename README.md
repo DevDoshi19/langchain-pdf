@@ -63,7 +63,7 @@ Want to see what the generated PDFs look like?
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/langchain-pdf.git
+git clone https://github.com/DevDoshi19/langchain-pdf.git
 cd langchain-pdf
 ````
 
